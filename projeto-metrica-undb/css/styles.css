@@ -1,0 +1,105 @@
+/* Geral */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    color: #323232;
+    border: none;
+}
+
+body {
+    background-color: black;
+    background-size: cover;
+    background-position-y: -100px;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+
+}
+a, label {
+    font-size: .8rem;
+}
+a:hover{
+    color: #085588;
+}
+
+/* container login */
+#login-container {
+ 
+    background-color: #f5f6f7;
+    width: 400px; 
+    padding: 30px 60px;
+    position: relative;               /* 2 */
+    top: 50%;  
+    left: 50%;                       /* 3 */
+    transform: translate(-50%, -15%);
+    border-radius:10px;
+    text-align: center;
+    
+}
+
+/*FORMULARIO*/
+
+form {
+   margin-top: 30px;
+   margin-bottom: 40px;
+
+}
+
+label, input {
+    display: block;
+    width: 100%;
+    text-align: left;
+
+}
+
+label{
+    font-weight: bold;
+
+}
+input{
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 25px;
+    border-radius: 15px;
+
+}
+input:focus{
+    border-bottom: 2px solid #085588;
+    
+}
+
+#forgot-pass {
+    text-align: right;
+    display: block;
+    
+}
+
+input[type="submit"] {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border:none;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    color: beige;
+    background-color: #1b223c;
+    cursor: pointer;
+
+}
+input[type="submit"]:hover {
+    background-color: #085588;
+    transition: .5s;
+}
+
+/*Registrar*/
+#register-container p {
+    margin-bottom: 10px;
+
+
+}

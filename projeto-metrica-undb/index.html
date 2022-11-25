@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <img src= "img/metrica-logo.png" width = "200">
+    <div id ="login-container">
+        
+        <h1>Acesso</h1>
+        <form action="">
+            <label for= "setor">Setor</label>
+            <select name="setor" id="setor">
+                <option value="vazio"></option>
+                <option value="estoque">Estoque</option>
+                <option value="administracao">Administração</option>
+                <option value="vendas">Vendas</option>
+            </select>
+            
+            <label for= "email">E-mail</label>
+            <input type ="email" name="email" id = "email" placeholder="Digite seu E-mail" autocomplete="off">
+            <label for = "password">Senha</label>
+            <input type ="password" name="password" id="password" placeholder ="Digite a sua senha">
+            <a href="#" id=" forgot-pass">Esqueceu a senha</a>
+            
+            <input type="submit" onclick = "logar(); return false" value="Login" >
+    
+        </form>
+        <div id="register-container">
+            <p>Ainda não tem conta?</p>
+            <a href="#">Registrar</a>
+        </div>
+    </div>
+
+    <script>
+        function logar(){
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            var setor = document.getElementById('setor').value
+            
+            localStorage.setItem("Email",email) 
+            if (email == "corp@email.com" && password == "admin" && setor == "estoque"){
+                alert('Sucesso!');
+                location.href = "home-estoque.html";
+            }else {
+                alert('Usuário ou senha incorretos.');
+            }
+        }
+        
+    </script>
+
+
+
+
+</body>
+</html>

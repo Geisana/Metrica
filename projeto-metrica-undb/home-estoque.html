@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque</title>
+    <link rel="stylesheet" href="css/estoque.css">
+    <script src = "js/funcoes.js"></script>
+</head>
+
+<body onload = "carregarTotalEstoque('totalEstoque')">
+    <img src= "img/metrica-logo.png" width = "150">
+    
+    <div id class = "email-login">
+        <script>
+            var dado = localStorage.getItem("Email")
+            document.write(`<h4>E-mail:${dado} <\h4>`)
+    
+        </script>  
+    </div>
+
+    
+    <div id class="carrinho" >
+        <p>Itens no estoque: <span id = "totalEstoque"> 0 </span></p>
+    
+    </div>
+
+    <form>
+        <table>
+            <caption> Cadastro de novos produtos </caption>
+            
+            <tr>
+                <td class = "alinharRotulos">Nome do produto:</td>
+                <td><input id = "txtNomeProduto" type= "text"></td>
+            </tr>
+
+            <tr>
+                <td class = "alinharRotulos">Código do produto:</td>
+                <td><input id = "txtCodProduto" type = "text"></td>
+            </tr>
+
+            <tr>
+                <td class = "alinharRotulos">Quantidade de produtos: </td>
+                <td> <input id = "qtidadeProduto" type = "text"></td>
+            </tr>
+
+            <tr colspan="2" align ="center">
+                <td>
+                    <input type="button" value="Cadastrar" class="alinharBtns" onclick="validarProduto('txtNomeProduto','txtCodProduto','qtidadeProduto')">
+                    <input type="button" value ="Estoque" class="alinharBtns" onclick="window.open('verEstoque.html', '_self')">
+                    <input type ="reset" value="Limpar" class = "alinharBtns">
+
+                </td>
+                
+            </tr>
+        </table>
+    </form> 
+
+
+
+
+</body>
+</html>

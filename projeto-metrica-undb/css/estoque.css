@@ -1,0 +1,55 @@
+/* Geral */
+
+.alinharRotulos {
+    text-align: right;
+}
+
+body {
+    background-size: cover;
+    background-position-y: -100px;
+    background-color: black;
+}
+
+.alinharBtns {
+    width: 30%;
+    background-color: rgb(10, 90, 196);
+    color: white;
+    border: 0px;
+    padding: 6px;
+    border-radius: 5px;
+    cursor:pointer;
+    box-align: center;
+}
+
+
+.carrinho {
+    width: 300 px;
+    float:right;
+    color: aliceblue;
+}
+
+
+.carrinho p {
+    display: inline;
+}
+
+.email-login {
+    width: 300 px;
+    float: center;
+    color: aliceblue;
+}
+
+table {
+    clear: both;
+    background-color: rgb(226, 212, 15);
+    border-radius: 10px;
+    padding: 30px;
+    width: 500px;
+    margin: auto;
+
+}
+caption {
+    color: rgb(228, 217, 217);
+    font-weight: bold;
+    font-size: 25px;
+}

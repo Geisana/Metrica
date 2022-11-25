@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    color: #f3ecec;
+    border: none;
+}
+
+body {
+    background-color: black;
+    background-size: cover;
+    background-position-y: -100px;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+
+}
+a, label {
+    font-size: .8rem;
+}
+a:hover{
+    color: #085588;
+}
+.lista{
+    color: #f6f7f8;
+}
+
